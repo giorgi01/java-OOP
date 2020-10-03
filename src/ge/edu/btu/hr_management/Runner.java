@@ -1,14 +1,14 @@
 package ge.edu.btu.hr_management;
 
 import ge.edu.btu.hr_management.company.Company;
+import ge.edu.btu.hr_management.customException.IncorrectFormatException;
 import ge.edu.btu.hr_management.employee.Employee;
 import ge.edu.btu.hr_management.office.Office;
 
-import java.util.Arrays;
 
 public class Runner {
 
-        public static void main(String[] args) {
+        public static void main(String[] args) throws IncorrectFormatException {
                 Company google = new Company();
 
                 Office googleOffice = new Office("Google", "Technologies", "Mountain View");

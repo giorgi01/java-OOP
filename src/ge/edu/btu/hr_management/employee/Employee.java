@@ -1,5 +1,7 @@
 package ge.edu.btu.hr_management.employee;
 
+import ge.edu.btu.hr_management.customException.IncorrectFormatException;
+
 public class Employee implements IEmployee {
 
     private String id;
@@ -10,7 +12,11 @@ public class Employee implements IEmployee {
 
     public Employee() {}
 
-    public Employee(String id, String firstName, String lastName, String position, int salary) {
+    public Employee(String id, String firstName, String lastName, String position, int salary) throws IncorrectFormatException {
+        if (id.toString().length() < 11) {
+            throw new IncorrectFormatException("ID must not be shortert than 11 symbol");
+        }
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;

@@ -13,8 +13,8 @@ public class Runner {
 
                 Office googleOffice = new Office("Google", "Technologies", "Mountain View");
 
-                Employee employeeFirst = new Employee("Sundar", "Pichai", "CEO", 70000);
-                Employee employeeSecond = new Employee("Marcus", "East", "CTO", 50000);
+                Employee employeeFirst = new Employee("01192433012","Sundar", "Pichai", "CEO", 70000);
+                Employee employeeSecond = new Employee("01123123495","Marcus", "East", "CTO", 50000);
 
                 googleOffice.addEmployee(employeeFirst);
                 googleOffice.addEmployee(employeeSecond);

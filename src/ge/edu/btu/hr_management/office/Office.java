@@ -33,7 +33,7 @@ public class Office extends Company {
 
     public void fireEmployee(Employee employee){
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].equals(employee)) {
+            if (employees[i].getId().equals(employee.getId())) {
                 employees[i] = null;
                 this.employeesAmount--;
                 break;

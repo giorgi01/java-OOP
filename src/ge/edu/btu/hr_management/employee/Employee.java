@@ -14,7 +14,7 @@ public class Employee implements IEmployee {
 
     public Employee(String id, String firstName, String lastName, String position, int salary) throws IncorrectFormatException {
         if (id.toString().length() < 11) {
-            throw new IncorrectFormatException("ID must not be shortert than 11 symbol");
+            throw new IncorrectFormatException("ID must not be shorter than 11 symbol");
         }
         this.id = id;
         this.firstName = firstName;
@@ -53,12 +53,12 @@ public class Employee implements IEmployee {
     }
 
     @Override
-    public void promoteTo(String position){
+    public void promoteTo(String position) throws IncorrectFormatException {
         this.position = position;
     }
 
     @Override
-    public void demoteTo(String position) {
+    public void demoteTo(String position) throws IncorrectFormatException {
         this.position = position;
     }
 }

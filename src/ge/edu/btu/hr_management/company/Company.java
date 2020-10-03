@@ -1,6 +1,6 @@
 package ge.edu.btu.hr_management.company;
 
-public class Company {
+abstract public class Company {
     private String companyName;
     private String companyIndustry;
 

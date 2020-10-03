@@ -1,5 +1,7 @@
 package ge.edu.btu.hr_management.employee;
 
+import ge.edu.btu.hr_management.customException.IncorrectFormatException;
+
 public interface IEmployee {
 
     String getFirstName();
@@ -12,7 +14,7 @@ public interface IEmployee {
 
     String getPosition();
 
-    void promoteTo(String position);
+    void promoteTo(String position) throws IncorrectFormatException;
 
-    void demoteTo(String position);
+    void demoteTo(String position) throws IncorrectFormatException;
 }
